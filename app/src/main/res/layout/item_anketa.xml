@@ -1,0 +1,85 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:layout_marginEnd="8dp"
+    android:background="#91C6A6"
+    >
+
+    <ImageView
+        android:id="@+id/statusAnketeImage"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="104dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/progresZavrsetka"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/nazivAnkete"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/nazivIstraživanja"
+        android:layout_width="171dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="62dp"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintBottom_toTopOf="@+id/progresZavrsetka"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nazivAnkete" />
+
+    <TextView
+        android:id="@+id/nazivAnkete"
+        android:layout_width="112dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-black"
+        app:autoSizeTextType="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ProgressBar
+        android:id="@+id/progresZavrsetka"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="135dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/datumAnkete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nazivIstraživanja" />
+
+    <TextView
+        android:id="@+id/datumAnkete"
+        android:layout_width="179dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="11dp"
+        android:background="#7F8AC6"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progresZavrsetka" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
